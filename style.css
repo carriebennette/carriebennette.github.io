@@ -115,8 +115,10 @@ html, body{
 		padding-bottom: 50%;
 	}
 	.content h1 {
-		font-size: 300%;
-		max-width: 300px;
+		font-size: 100%;
+		max-width: 400px;
+		line-height: 55%;
+		margin: 0 auto;
 	}
 	.content h2 {
 		font-size: 100%;
