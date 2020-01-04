@@ -36,7 +36,7 @@ html, body{
 	text-align: center;
 	padding-bottom: 15%;
 }
-.content h1 {
+.intro .inner .content h1 {
 	font-family: 'Madelyn W05 Regular', cursive;
 	font-size: 650%;
 	font-weight: 100;
