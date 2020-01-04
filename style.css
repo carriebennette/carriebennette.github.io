@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+@font-face{
+    font-family:"Madelyn W05 Regular";
+    src:url("../Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix");
+    src:url("../Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix") format("eot"),url("Fonts/ae9ea911-4f91-4c22-96aa-e3056bac7e6e.woff2") format("woff2"),url("Fonts/5451115/dcde243f-7476-4dda-be9c-98f4a0baa1ad.woff") format("woff"),url("Fonts/5451115/702551a4-2675-4f74-b1a7-72572c7336e4.ttf") format("truetype");
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(imgs/silhouette-of-mountains-1323550.jpg) no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content {
+	max-width: 850px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 15%;
+}
+.content h1 {
+	font-family: 'Madelyn W05 Regular', cursive;
+	font-size: 650%;
+	font-weight: 100;
+	color: #3D3948;
+	line-height: 10%;
+	padding-top: 25%;
+}
+
+.content h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 130%;
+	max-width: 650px;
+	margin: 0 auto;
+	font-weight: 100;
+	color: #3D3948;
+	line-height: 110%;
+	padding-bottom: 10%;
+	text-decoration: none;
+}
+.content .flatiron {
+	color: #3D3948;
+	text-decoration: none;
+}
+
+.content .flatiron:hover {
+	color: #EDF4EC;
+}
+
+.content .temp {
+	font-size: 130%;
+	line-height: 120%;
+}
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+	.content {
+		padding-bottom: 30%;
+	}
+	.content h1 {
+		font-size: 600%;
+	}
+	.content h2 {
+		font-size: 130%;
+		max-width: 650px;
+	}
+	.connect {
+		font-size: 100%;
+		padding: 7px 15px;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.content {
+		padding-bottom: 30%;
+	}
+	.content h1 {
+		font-size: 500%;
+	}
+	.content h2 {
+		font-size: 110%;
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	.connect {
+		font-size: 100%;
+		max-width: 180px;
+		padding: 6px 14px;
+	}
+	p {
+		font-size: 120%;
+		line-height: 100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.content {
+		padding-bottom: 50%;
+	}
+	.content h1 {
+		font-size: 300%;
+	}
+	.content h2 {
+		font-size: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	.connect {
+		font-size: 90%;
+		padding: 5px 12px;
+	}
+	p {
+		font-size: 120%;
+		line-height: 100%;
+	}
+}
