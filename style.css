@@ -4,8 +4,8 @@
 
 @font-face{
     font-family:"Madelyn W05 Regular";
-    src:url("../Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix");
-    src:url("../Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix") format("eot"),url("Fonts/ae9ea911-4f91-4c22-96aa-e3056bac7e6e.woff2") format("woff2"),url("Fonts/5451115/dcde243f-7476-4dda-be9c-98f4a0baa1ad.woff") format("woff"),url("Fonts/5451115/702551a4-2675-4f74-b1a7-72572c7336e4.ttf") format("truetype");
+    src:url("Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix");
+    src:url("Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix") format("eot"),url("Fonts/ae9ea911-4f91-4c22-96aa-e3056bac7e6e.woff2") format("woff2"),url("Fonts/5451115/dcde243f-7476-4dda-be9c-98f4a0baa1ad.woff") format("woff"),url("Fonts/5451115/702551a4-2675-4f74-b1a7-72572c7336e4.ttf") format("truetype");
 }
 
 html, body{
