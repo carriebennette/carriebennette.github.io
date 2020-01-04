@@ -30,7 +30,7 @@ html, body{
 	width: 100%;
 	max-width: none;
 }
-.content {
+.intro .inner .content {
 	max-width: 850px;
 	margin: 0 auto;
 	text-align: center;
@@ -45,7 +45,7 @@ html, body{
 	padding-top: 25%;
 }
 
-.content h2{
+.intro .inner .content h2{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 130%;
 	max-width: 650px;
@@ -56,12 +56,12 @@ html, body{
 	padding-bottom: 10%;
 	text-decoration: none;
 }
-.content .flatiron {
+.intro .inner .content .flatiron {
 	color: #3D3948;
 	text-decoration: none;
 }
 
-.content .flatiron:hover {
+.intro .inner .content .flatiron:hover {
 	color: #EDF4EC;
 }
 
@@ -116,6 +116,7 @@ html, body{
 	}
 	.content h1 {
 		font-size: 300%;
+		max-width: 300px;
 	}
 	.content h2 {
 		font-size: 100%;
