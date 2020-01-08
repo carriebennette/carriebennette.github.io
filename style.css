@@ -8,12 +8,50 @@
     src:url("Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix") format("eot"),url("Fonts/ae9ea911-4f91-4c22-96aa-e3056bac7e6e.woff2") format("woff2"),url("Fonts/5451115/dcde243f-7476-4dda-be9c-98f4a0baa1ad.woff") format("woff"),url("Fonts/5451115/702551a4-2675-4f74-b1a7-72572c7336e4.ttf") format("truetype");
 }
 
+.script {
+    font-family: 'Madelyn W05 Regular', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
 html, body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	color: #1b1b1b;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+/*--- LINKS ---*/
+
+a, a:link, a:visited, a:active {
+    color: inherit;
+  	border-bottom: 2px solid rgba(159,104,125,0.8);
+  	text-decoration: none;
+}
+
+a:hover {
+    transition: all 0.1s ease;
+	background-color: rgba(159,104,125,0.4);
+	border-bottom: none;
+}
+
+/*--- LANDING PAGE *---*/
 
 .intro {
 	height: 100%;
@@ -22,6 +60,10 @@ html, body{
 	background: url(imgs/silhouette-of-mountains-1323550.jpg) no-repeat 50% 50%;
 	display: table;
 	top: 0;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 	background-size: cover;
 }
 .intro .inner {
@@ -37,14 +79,14 @@ html, body{
 	padding-bottom: 15%;
 }
 .intro .inner .content h1 {
-	font-family: 'Madelyn W05 Regular', cursive;
+	font-family: 'Madelyn W05 Regular', monospace;
 	font-size: 650%;
 	font-weight: 100;
 	color: #3D3948;
 	padding-top: 25%;
 }
 
-.intro .inner .content h2{
+.intro .inner .content p{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 130%;
 	max-width: 650px;
@@ -55,12 +97,13 @@ html, body{
 	padding-bottom: 10%;
 	text-decoration: none;
 }
-.intro .inner .content .flatiron {
+.intro .inner .content .idm {
 	color: #3D3948;
 	text-decoration: none;
+	border-bottom: none;
 }
 
-.intro .inner .content .flatiron:hover {
+.intro .inner .content .idm:hover {
 	color: #EDF4EC;
 }
 
@@ -68,6 +111,187 @@ html, body{
 	font-size: 130%;
 	line-height: 120%;
 }
+
+h2 {
+	font-family: 'Madelyn W05 Regular', cursive;
+	font-size: 330%;
+	font-weight: 100;
+	color: #3D3948;
+	line-height: 100%;
+	padding: 3% 2% 0% 2%;
+
+}
+
+.base_text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 120%;
+	font-weight: 100;
+	color: #3D3948;
+	line-height: 110%;
+	padding: 0% 2% 2% 2%;
+	line-height: 120%;
+	text-decoration: none;
+}
+
+.base_text:hover {
+	color: #3D3948;
+	text-decoration: none;
+}
+
+
+/*--- LISTS ---*/
+
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 2.5em;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/*--- PORTFOLIO ---*/
+#about_me, #publications, #dataviz {
+    margin: 1em 0 2em 0;
+}
+
+.portfolio_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    list-style: none;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+.portfolio_post {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+    margin: 0
+}
+
+.portfolio_link {
+	width: 100%;
+	text-decoration: none;
+}
+
+.portfolio_img_wrapper {
+	width: 100%;
+	line-height: 0;
+	background: linear-gradient(rgba(159,104,125, .7) 0%, rgba(236,153,83, .8) 100%);
+}
+
+
+.portfolio_img_wrapper:hover .portfolio_hover_img {
+	opacity: 1;
+}
+
+.portfolio_img {
+	width: 100%;
+}
+
+.portfolio_hover_img {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.4s ease;
+}
+
+.portfolio_img_screen {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: url(imgs/overlay.png), linear-gradient(rgba(207,125,131, .85) 0%, rgba(159,104,125, .85) 100%);
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.portfolio_wrapper {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-60%);
+		    transform: translateY(-60%);
+	z-index: 3;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+	opacity: 0;
+}
+
+.portfolio_img_wrapper:hover .portfolio_wrapper,
+.portfolio_img_wrapper:hover .portfolio_img_screen {
+	opacity: 1;
+}
+
+.publication_name {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 125%;
+	font-weight: 400;
+	margin: 2em 0 1em 0;
+	line-height: 1.2em;
+	padding: 1.0em 0.1em;
+}
+
+#publications {
+ 	background: linear-gradient(rgba(233,206,99, .15) 0%, rgba(236,153,83, .15) 100%);
+}
+
+/*--- FOOTER *---*/
+footer {
+	height: 90%;
+	width: 100%;
+	margin: auto;
+    background: url(imgs/scenic-view-of-mountain-during-evening-2085998.jpg) no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+	font-size: 130%;
+	color: white;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+
+footer .footer_text {
+	padding: 5% 5% 2% 2%;
+	width: 65%;
+	line-height: 110%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer h2 {
+	color: white;
+}
+
+footer .footer_email {
+	padding: 1% 2% 1% 2%;
+	margin-left: 5%;
+    border-bottom: none;
+	font-family: 'Madelyn W05 Regular', cursive;
+	font-size: 250%;
+ 	color: white;
+ 	text-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+footer .footer_email:hover {
+	transition: all 0.1s ease;
+	color: #D7BFC7;
+	background: none;
+}
+
 
 /*--- Media Queries --*/
 @media screen and (max-width: 900px) {
@@ -86,7 +310,14 @@ html, body{
 		padding: 7px 15px;
 	}
 
+	.publication_name {
+		font-size: 100%;
+		font-weight: 400;
+		line-height: 1.0em;
+	}
+
 }
+
 @media screen and (max-width: 768px) {
 	.content {
 		padding-bottom: 30%;
@@ -108,7 +339,20 @@ html, body{
 		font-size: 120%;
 		line-height: 100%;
 	}
-}
+	#portfolio {
+ 		margin: 3em 0 0 0;
+ 	}
+ 	.portfolio_post {
+ 	 	grid-column: 2 / -2	;
+ 	 	grid-column-gap: 100px;
+ 	}
+
+ 	footer {
+  	}
+
+ }
+    
+	
 @media screen and (max-width: 480px) {
 	.content {
 		padding-bottom: 50%;
@@ -131,5 +375,15 @@ html, body{
 	p {
 		font-size: 120%;
 		line-height: 100%;
+	}
+
+	.portfolio_post {
+		grid-column: 2 / -2;
+	}
+
+	.publication_name {
+		font-size: 90%;
+		font-weight: 400;
+		line-height: 1.0em;
 	}
 }
