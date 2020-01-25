@@ -43,7 +43,7 @@ h2 {
 
 a, a:link, a:visited, a:active {
     color: inherit;
-  	border-bottom: 2px solid rgba(159,104,125,0.8);
+  	border-bottom: 0px;
   	text-decoration: none;
   	line-height: 100%;
 }
@@ -105,9 +105,11 @@ a:hover {
 	text-decoration: none;
 	border-bottom: none;
 }
+
 .intro .inner .content .idm:hover {
 	color: #EDF4EC;
 }
+
 .base_text {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 120%;
