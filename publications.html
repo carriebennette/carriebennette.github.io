@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+	<title>Carrie Bennette | Data Scientist </title>
+
+	<!-- for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+    
+	<meta name="description" content="Welcome to Carrie Bennette's homepage. I'm a data scientist and data visualisation enthusiast with a background in biostatistics, health economics, and policy research.">
+	<meta name="keywords" content="data science, dataviz, health economics, biostatistics, consulting, freelance, data viz, data visualization, information visualization, R, D3">
+    <meta name="author" content="Carrie Bennette">
+</head>
+<body>
+
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html">home</a>
+	  <a href="portfolio.html">portfolio</a>
+	  <a href="publications.html">publications</a>
+	  <a href="about_me.html">about me</a>
+	  <a href="contact">contact</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+	<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+
+<!-- Publications -->
+	<section id="publications">
+		<h2>Publications</h2>
+
+		<p class="base_text">A complete list of all my publications (more than 100) is available on <a href="https://scholar.google.com/citations?user=36KscqgAAAAJ">Google Scholar</a>. Below are links to some of my favorites. </p>
+
+		<ul class="publication_list">
+
+			<li class="publication_post">
+				<a href="https://academic.oup.com/jnci/article/108/2/djv324/2457811" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Which trials will enroll enough cancer patients?<br>(Hint: not all of them)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/trial_prediction_cover.png" alt="Trial Prediction">
+					</div>
+				</a>
+			</li>
+
+			<li class="publication_post">
+				<a href="https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2015.1145" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>The prices of cancer drugs mostly go 📈 and in economically predictable ways</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/drug_pricing_cover.png" alt="Drug Pricing">
+					</div>
+				</a>
+			</li>
+
+			<li class="publication_post">
+				<a href="https://link.springer.com/article/10.1186/1471-2288-12-21" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+							<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Please don't categorize your continuous variables</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/quantiles_cover.png" alt="Against Quantiles">
+					</div>
+				</a>
+			</li>
+
+			<li class="publication_post">
+				<a href="https://www.nature.com/articles/gim2014156" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Is it cost-effective<br> to return secondary findings from genomic sequencing?<br>(Mostly yes)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/cea_genetics_cover.png" alt="cost-effectiveness genomic">
+					</div>
+				</a>
+			</li>	
+
+			<li class="publication_post">
+				<a href="https://cebp.aacrjournals.org/content/19/5/1201.short" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>How much earlier does PSA screening find prostate cancer?<br>(Roughly a decade)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/masters_thesis_cover.png" alt="masters_thesis_cover">
+					</div>
+				</a>
+			</li>	
+
+
+			<li class="publication_post">
+				<a href="https://www.nature.com/articles/gim201363" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Can we quantify patient preferences for the return of seconary genomic findings?<br>(Yep &amp; here's how)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/imprint_cover.png" alt="imprint_cover">
+					</div>
+				</a>
+			</li>	
+
+			<li class="publication_post">
+				<a href="https://www.auajournals.org/doi/abs/10.1016/j.juro.2009.08.034" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Most surgeons removing prostates have low annual caseloads<br>(&amp; why that's scary)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/urology_cover.png" alt="urology_cover">
+					</div>
+				</a>
+			</li>	
+
+			<li class="publication_post">
+				<a href="https://journals.plos.org/plosone/article%3Fid%3D10.1371/journal.pone.0007078" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Will you please <br>share your data with me?<br>(Mostly no 😔)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/data_sharing_cover.png" alt="data_sharing_cover">
+					</div>
+				</a>
+			</li>	
+
+			<li class="publication_post">
+				<a href="https://journals.sagepub.com/doi/abs/10.1177/0272989X16636847" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Which clinical trials will generate the most valuable evidence?<br>(Here's a new method to help answer)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/VOI_cover.png" alt="VOI_cover">
+					</div>
+				</a>
+			</li>	
+
+			<li class="publication_post">
+				<a href="https://www.mitpressjournals.org/doi/abs/10.1162/ajhe_a_00125" class="publication_link">
+					<div class="publication_img_wrapper">
+						<div class="publication_img_screen"></div>
+					<div class="publication_wrapper">
+						<p class="publication_name">
+							<span>Diminishing <br>marginal health benefits from new 💊 for cancer <br>(This one's my favorite)</span>
+						</p>
+					</div>
+					<img class="publication_img" src="imgs/publications/innovation_cover.png" alt="innovation_cover">
+					</div>
+				</a>
+			</li>	
+
+		</ul>
+	</section>
+
+
+	<!-- Consulting Services/Footer -->
+ 	<footer>
+		<div class="footer">
+			<section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+				<h2>Let's work together</h2>
+				<p class="footer_text">Are you looking for help analyzing and visualizing complex health, economic, or policy-related data? <br><br>If so, please get in touch to discuss how we might work together!</p>
+			</section>
+			<br>
+				<a class="footer_email" href="mailto:caroline.bennette@gmail.com">caroline.bennette@gmail.com</a>
+			<div class="footer_social">
+				<ul class="share_list">
+
+				</ul>
+
+
+		</div>
+
+ 	</footer>
+</body>
+</html>
