@@ -8,10 +8,6 @@
     src:url("Fonts/ca3d66c5-4c37-4d73-bc93-942dca6f5125.eot?#iefix") format("eot"),url("Fonts/ae9ea911-4f91-4c22-96aa-e3056bac7e6e.woff2") format("woff2"),url("Fonts/5451115/dcde243f-7476-4dda-be9c-98f4a0baa1ad.woff") format("woff"),url("Fonts/5451115/702551a4-2675-4f74-b1a7-72572c7336e4.ttf") format("truetype");
 }
 
-.script {
-    font-family: 'Madelyn W05 Regular', monospace;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -42,14 +38,48 @@ h2 {
 h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 130%;
-	font-weight: 100;
+	font-weight: 600;
 	color: #322f3b;
 	line-height: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;
-	text-align: left;
+	text-align: center;
 }
 
+.base_text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 120%;
+	font-weight: 100;
+	color: #3D3948;
+	padding: 0% 2% 2% 2%;
+	line-height: 150%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.centered {
+	text-align: center;
+}
+
+.large {
+	font-size: 150%;
+}
+
+.small {
+	font-size: 90%;
+}
+
+.narrow {
+	margin: 2% 20% 2% 20%;
+}
+
+#about_me, #publications, #dataviz {
+    margin: 1em 0 2em 0;
+}
 /*--- LINKS ---*/
 
 a, a:link, a:visited, a:active {
@@ -66,23 +96,12 @@ a:hover {
 }
 
 /*---NAVBAR ---*/
-/* Create a sticky/fixed navbar */
-.topnav {
-  overflow: hidden;
-  padding: 0px 0px 0px ;
-  transition: 0.4s; 
-  position: fixed; 
-  width: 100%;
-  background-color: rgba(255,255,255, 0.75);
-  top: 0; /* At the top */
-  z-index: 99;
-}
-
-.topnav_home {
+/* Create a navbar */
+.topnav, .topnav_home {
   overflow: hidden;
   padding: 0px 0px 0px ; 
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
+  position: absolute; /* Sticky/fixed navbar */
   width: 100%;
   background-color: none;
   top: 0; /* At the top */
@@ -101,24 +120,18 @@ a:hover {
   font-size: 18px;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active, .topnav_home a.active {
-  text-decoration: 1px;
-}
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon, .topnav_home .icon{
   display: none;
 }
 
-.home, .portfolio, .publications, .about_me, .consulting {
+.home, .publications, .about_me, .consulting {
 	border-bottom: 2px solid transparent;
 	padding-bottom: 5px;
 	transition: ease-in-out 0.3s;
 }
 
 .home:hover, 
-.portfolio:hover,
 .publications:hover,
 .about_me:hover,
 .consulting:hover  {
@@ -155,6 +168,7 @@ li {
   	background-size: cover;
 	background-size: cover;
 }
+
 .intro .inner {
 	display: table-cell;
 	vertical-align: middle;
@@ -169,50 +183,58 @@ li {
 }
 .intro .inner .content h1 {
 	font-family: 'Madelyn W05 Regular', monospace;
-	font-size: 650%;
+	font-size: 750%;
 	font-weight: 100;
 	color: #3D3948;
 	padding-top: 25%;
 }
 .intro .inner .content p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 130%;
-	max-width: 650px;
+	font-size: 180%;
+	max-width: 700px;
 	margin: 0 auto;
 	font-weight: 100;
 	color: #3D3948;
-	line-height: 110%;
+	line-height: 100%;
 	padding-bottom: 10%;
 	text-decoration: none;
 }
-.intro .inner .content .idm {
-	color: #3D3948;
-	text-decoration: none;
-	border-bottom: none;
+
+/*--- SKILLZ ---*/
+
+.skillz_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 2em;
+    grid-gap: 2em;
 }
 
-.intro .inner .content .idm:hover {
-	color: #EDF4EC;
+.tools_text{
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+    background-color: #f2f2f2;
 }
 
-.base_text {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 120%;
-	font-weight: 100;
-	color: #3D3948;
-	padding: 0% 2% 2% 2%;
-	line-height: 120%;
-	text-decoration: none;
+.skillz_post{
+	padding: 25px;  
 }
 
-.base_text:hover {
-	color: #3D3948;
-	text-decoration: none;
+.skillz_text{
+	font-size: 90%;
+	display: block;
+	background: none;	
 }
 
-/*--- PORTFOLIO ---*/
-#about_me, #publications, #dataviz {
-    margin: 1em 0 2em 0;
+.tools_text{
+	font-size: 110%;
+		background: none;
+}
+
+.list_text{
+	line-height: 95%;
 }
 
 /*--- PORTFOLIO ---*/
@@ -220,18 +242,17 @@ li {
 .portfolio_list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2fr)[4];
-        grid-template-columns: repeat(4, 2fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     list-style: none;
     margin: 1em;
-
+    grid-gap: 0.5em;
 }
 
 .portfolio_post, .portfolio_text {
-    -ms-grid-column-span: 2;
-        grid-column-end: span 2;
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
     padding: 15px 0px 15px 0px;
-    background-color: #f2f2f2;
 
 }
 
@@ -240,9 +261,7 @@ li {
 	text-decoration: none;
 }
 
-
 .portfolio_img {
-	width: 100%;
 	display:block;
 	padding-left: 15px;
 }
@@ -252,6 +271,7 @@ li {
 }
 
 /*--- PUBLICATION ---*/
+
 .publication_list {
     display: -ms-grid;
     display: grid;
@@ -259,13 +279,12 @@ li {
         grid-template-columns: repeat(10, 1fr);
     list-style: none;
     margin: 1em 0 0 0;
-    padding: 0;
+    grid-gap: 0.5em;
 }
 
 .publication_post {
     -ms-grid-column-span: 2;
         grid-column-end: span 2;
-    margin: 0.25em;
 }
 
 .publication_link {
@@ -297,7 +316,7 @@ li {
 .publication_wrapper {
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 60%;
 	-webkit-transform: translateY(-60%);
 		    transform: translateY(-60%);
 	z-index: 3;
@@ -311,38 +330,14 @@ li {
 .publication_img_wrapper:hover .publication_img_screen {
 	opacity: 1;
 }
+
 .publication_name {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 125%;
+	font-size: 100%;
 	font-weight: 400;
 	margin: 2em 0 1em 0;
 	line-height: 1.2em;
 	padding: 1.0em 0.1em;
-}
-
-/*--- ABOUT ME ---*/
-
-.headshot{
-	text-align: center;
-	padding: 30px;
-}
-
-#headshot{
-	width: 150px;
-}
-
-.aboutme, .contactme, .publications_text {
-	padding: 0 100px 0 100px;
-}
-
-hr {
-    color: #3D3948;
-    margin-top: 50px;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 57, 72, 0.75), rgba(0, 0, 0, 0));
-    width: 50%;
-    margin-left:25%;
 }
 
 /*--- CONTACT ME ---*/
@@ -378,6 +373,16 @@ input:focus, textarea:focus {
     border-bottom: 1px solid #3d3948;
 }
 
+hr {
+    color: #3D3948;
+    margin-top: 50px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 57, 72, 0.75), rgba(0, 0, 0, 0));
+    width: 50%;
+    margin-left:25%;
+}
+
 .contactform {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -408,8 +413,6 @@ input:focus, textarea:focus {
   background: rgba(247, 247, 247, .35);
 }
 
-
-
 /*--- FOOTER *---*/
 footer {
 	height: 90%;
@@ -427,7 +430,6 @@ footer {
 
 footer .footer_text {
 	padding: 5%;
-	width: 85%;
 	font-size: 180%;
 	font-family: 'Lato', sans-serif;
 }
@@ -474,8 +476,8 @@ footer .footer_contact:hover {
 }
 
 li .social_favicon svg {
-  width: 1.6em;
-  height: 1.6em;
+  width: 2em;
+  height: 2em;
   fill: #f7f2f4;
   vertical-align: baseline;
 }
@@ -528,16 +530,16 @@ li .aboutme_favicon svg:hover {
 		font-size: 130%;
 		max-width: 650px;
 	}
-	.connect {
-		font-size: 100%;
-		padding: 7px 15px;
-	}
 
 	.publication_name {
 		font-size: 90%;
 		font-weight: 400;
 		line-height: 1.0em;
 	}
+
+	.narrow {
+		margin: 1% 10% 1% 10%;
+  	}
 
  	footer .footer_text {
  		font-size: 150%;
@@ -560,19 +562,20 @@ li .aboutme_favicon svg:hover {
 		max-width: 360px;
 		margin: 0 auto;
 	}
-	.connect {
-		font-size: 100%;
-		max-width: 180px;
-		padding: 6px 14px;
+
+	h3 {
+		font-size: 120%;
 	}
+
 	p {
 		font-size: 90%;
-		line-height: 100%;
+		line-height: 150%;
 	}
-	#portfolio, #publications {
- 		margin: 3em 0 0 0;
- 	}
  
+ 	.skillz_post {
+		grid-column: 1 / -1;
+  	}
+
 	.publication_list {
     	display: -ms-grid;
     	display: grid;
@@ -588,6 +591,13 @@ li .aboutme_favicon svg:hover {
 		font-weight: 400;
 		line-height: 1.1em;
 	}
+	.large {
+		font-size: 140%;
+	}
+
+	.narrow {
+		margin: 1% 8% 1% 8%;
+  	}
 
  	footer .footer_text {
  		font-size: 120%;
@@ -635,15 +645,35 @@ li .aboutme_favicon svg:hover {
     text-align: left;
   }
 
+  .portfolio_post, .publication_post {
+	grid-column: 1 / -1;
+  }
+
+  .publication_name {
+	font-size: 140%;
+	font-weight: 400;
+	line-height: 1.2em;
+  }
+
+  h3 {
+	font-size: 110%;
+  }
+
+  .large {
+	font-size: 130%;
+  }
+
+  .narrow {
+	margin: 1% 5% 1% 5%;
+  }
 
   footer .footer_text {
-	width: 85%;
-	font-size: 95%;
+	font-size: 100%;
 	font-family: 'Montserrat', sans-serif;
   }
   
   footer .footer_contact {
-	font-size: 90%;
+	font-size: 110%;
   }
 }
 
@@ -663,31 +693,40 @@ li .aboutme_favicon svg:hover {
 		max-width: 300px;
 		margin: 0 auto;
 	}
-	.connect {
-		font-size: 90%;
-		padding: 5px 12px;
-	}
+
 	p {
 		font-size: 70%;
 		line-height: 100%;
 	}
 
 	.portfolio_post, .publication_post {
-		grid-column: 2 / -2;
+		grid-column: 1 / -1;
 	}
 
-	.publication_name {
-		font-size: 50%;
+  .publication_name {
+		font-size: 80%;
 		font-weight: 400;
-		line-height: 1.0em;
+		line-height: 1.1em;
+  	}
+	 
+	h3 {
+		font-size: 100%;
 	}
 
+	.large {
+		font-size: 120%;
+	}
+
+	.narrow {
+		margin: 1% 1% 1% 1%;
+	}
 
   	footer .footer_text {
-	width: 100%;
-	font-size: 75%;
+		width: 100%;
+		font-size: 85%;
 	}
 
 	footer .footer_contact {
-	font-size: 200%;
+		font-size: 200%;
+	}
 }
