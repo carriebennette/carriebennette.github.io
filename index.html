@@ -13,7 +13,7 @@
 	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="js/waypoints.js" type="text/javascript"></script>
     
-	<meta name="description" content="Welcome to Carrie Bennette's homepage. I'm a data scientist and data visualisation enthusiast with a background in biostatistics, health economics, and policy research.">
+	<meta name="description" content="Welcome to Carrie Bennette's homepage. I'm a data scientist and data visualisation enthusiast with a background in biostatistics, health economics, decision sciences, and policy research.">
 	<meta name="keywords" content="data science, dataviz, health economics, biostatistics, consulting, freelance, data viz, data visualization, information visualization, R, D3">
     <meta name="author" content="Carrie Bennette">
 </head>
@@ -26,12 +26,14 @@
 			<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-			<div class="topnav_home" id="myTopnav">
-			  <a href="index.html">home</a>
-			  <a href="portfolio.html">portfolio</a>
-			  <a href="publications.html">publications</a>
-			  <a href="about_me.html">about me</a>
-			  <a href="contact">contact</a>
+			<div class="topnav_home" id="main_nav">
+				<ul >
+					<li class="home"><a href="index.html">home</a></li>
+					<li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+					<li class="publications"><a href="publications.html">publications</a></li>
+					<li class="about_me"><a href="about_me.html">about me</a></li>
+					<li class="consulting"><a href="contact.html">consulting</a></li>
+				</ul>
 			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			    <i class="fa fa-bars"></i>
 			  </a>
@@ -43,7 +45,7 @@
 				</section>
 				
 				<section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".05s">
-					<p>Senior research scientist at the <a class="idm" href="idmod.org" target="_new">Institute for Disease Modeling</a> (starting March 2020) &amp; freelance data visualization designer</p>
+					<p>Senior research scientist at the <a class="idm" href="idmod.org" target="_new">Institute for Disease Modeling</a> &amp; freelance data visualization designer</p>
 				</section>
 
 			</div>
@@ -53,7 +55,7 @@
 	<script>
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {
-	  var x = document.getElementById("myTopnav");
+	  var x = document.getElementById("main_nav");
 	  if (x.className === "topnav_home") {
 	    x.className += " responsive";
 	  } else {

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<title> Contact Page | Carrie Bennette </title>
+
+	<!-- for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+    
+	<meta name="description" content="Welcome to Carrie Bennette's homepage. I'm a data scientist and data visualisation enthusiast with a background in biostatistics, health economics, and policy research.">
+	<meta name="keywords" content="data science, dataviz, health economics, biostatistics, consulting, freelance, data viz, data visualization, information visualization, R, D3">
+    <meta name="author" content="Carrie Bennette">
+</head>
+<body>
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class="topnav" id="main_nav">
+		<ul>
+			<li class="home"><a href="index.html">home</a></li>
+			<li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+			<li class="publications"><a href="publications.html">publications</a></li>
+			<li class="about_me"><a href="about_me.html">about me</a></li>
+			<li class="consulting"><a href="contact.html">consulting</a></li>
+		</ul>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+	<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	  var x = document.getElementById("main_nav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+
+
+<!-- Services -->
+	<section id="services">
+		<br>	
+		<h2>Consulting Services</h2>
+		<div class = "base_text">
+			<br>
+			<p class="contactme"> I've worked with academics, non-profit organizations, start-ups, consulting firms and international corporations to help them analyze and visualize a wide variety of data. I create both static and interactive visualizations for use in print and online, and can advise you on the best formats to match your goals.  I can help make standard charts look beauitful as well as create completely custom visualizations based on your unique data. <br><br> My services include the end-to-end data visualization process. I can collect, clean, and analyze the data as well as create the print- or production-ready data visualization. I can also work with you and your team and focus only on the steps necessary to create the visualization design &mdash; for example, editing existing figures to make them clearer and more visually engaging or translating a series of static charts into an interactive piece. Please get in touch to discuss what works best for you! <br><br> I also enjoy sharing my passion for data visualization with others. I've taught a highly rated short course on data visualization since 2015 and have led several webinars and workshops for different organizations.  Please let me know if you are interested in learning more about my teaching services. </p>
+			<hr class = "hr_break">
+
+<!-- Contact Me -->
+	<section id="get-in-touch">
+		<h2>Get in touch!</h2>
+		<div class = "contactform">
+			<br>
+			<form action="https://formspree.io/xwkvgwrd" method="POST">
+				<div class="hpot">
+					<label>Leave this field empty: <input name="_gotcha"></label>
+				</div>
+				<div>
+					<label for="name">name</label></br>
+					<input type="text" id="name" name="user_name" placeholder="Enter your name">
+				</div>
+				<div>
+					<label for="mail">email</label></br>
+					<input type="email" id="mail" name="_replyto" placeholder="Enter your email address">
+				</div>
+				<label for="subject">subject</label></br>
+				<input type="text" id="subject" name="_subject" placeholder="What would you like to discuss?" />
+				<div>
+					<label for="msg">message</label></br>
+					<textarea id="msg" name="user_message" placeholder="I&#39;m excited to hear about your project and visualization goals. If possible, please include information about your data, budget and any possible deadlines. Thank you!"></textarea>
+				</div>
+				<div class="button">
+					<button type="submit" class="btn-normal">send!</button>
+				</div>
+				<input type="hidden" name="_next" value="http://carriebennette.github.io"/>
+			</form>
+		</div>
+	</section>
+
+	<!-- Consulting Services/Footer -->
+		<div>
+      		<div class="copyright consulting">
+      			<span> &copy;  Carrie Bennette  2020</span>
+      		</div>
+		</div>
+
+</body>
+</html>
