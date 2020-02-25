@@ -444,6 +444,7 @@ footer .footer_contact {
   	padding: 7px;
   	border-radius: 5px;
   	margin-bottom: 0.5rem;
+  	-webkit-appearance: button;
 }
 
 footer .footer_contact:hover {
@@ -735,9 +736,6 @@ li .aboutme_favicon svg:hover {
 
 	footer .footer_contact {
 		font-size: 100%;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-    	-o-appearance: none;
 	}
 
 
