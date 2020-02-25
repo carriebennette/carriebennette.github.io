@@ -516,7 +516,6 @@ li .aboutme_favicon svg:hover {
 }
 
 .consulting{
-	font-size: 1rem;
 	color: #3D3948;
 }
 
@@ -720,7 +719,7 @@ li .aboutme_favicon svg:hover {
 	}
 
 	.list_text {
-    	line-height: 100%;
+    	line-height: 120%;
 	}
 
   	footer .footer_text {
@@ -734,6 +733,4 @@ li .aboutme_favicon svg:hover {
 		font-family: 'Lato';
 		font-size: 120%;
 	}
-
-
 }
