@@ -163,6 +163,9 @@ li {
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+  	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .intro .inner {
@@ -679,6 +682,7 @@ li .aboutme_favicon svg:hover {
 		padding-bottom: 50%;
 		min-height: 100%;
 	}
+
 	.content h1 {
 		font-size: 100%;
 		max-width: 400px;
@@ -725,6 +729,10 @@ li .aboutme_favicon svg:hover {
 
 	footer .footer_contact {
 		font-size: 200%;
-		font-family: "Lato";
+		-webkit-appearance: none;
+		-moz-appearance: none;
+    	-o-appearance: none;
 	}
+
+
 }
