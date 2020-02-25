@@ -729,6 +729,8 @@ li .aboutme_favicon svg:hover {
 
 	footer .footer_contact {
 		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
 		font-family: 'Lato';
 		font-size: 120%;
 	}
