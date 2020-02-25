@@ -206,7 +206,9 @@ li {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -webkit-grid-columns:  (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+	-webkit-grid-template-columns: repeat(2, 1fr);
     list-style: none;
     margin: 2em;
     grid-gap: 2em;
@@ -444,7 +446,6 @@ footer .footer_contact {
   	padding: 7px;
   	border-radius: 5px;
   	margin-bottom: 0.5rem;
-  	-webkit-appearance: button;
 }
 
 footer .footer_contact:hover {
@@ -567,11 +568,6 @@ li .aboutme_favicon svg:hover {
 	h3 {
 		font-size: 120%;
 	}
-
-	p {
-		font-size: 90%;
-		line-height: 150%;
-	}
  
  	.skillz_post {
 		grid-column: 1 / -1;
@@ -642,7 +638,7 @@ li .aboutme_favicon svg:hover {
   }
   .topnav_home.responsive a {
     float: none;
-    display: block;
+    display: inline-block;
     text-align: left;
   }
 
@@ -676,6 +672,10 @@ li .aboutme_favicon svg:hover {
   footer .footer_contact {
 	font-size: 110%;
   }
+  .contactform {
+  	margin-left: 0.5rem;
+  	margin-right: 2.5rem;
+  }
 }
 
 
@@ -697,11 +697,6 @@ li .aboutme_favicon svg:hover {
 		margin: 0 auto;
 	}
 
-	p {
-		font-size: 70%;
-		line-height: 100%;
-	}
-
 	.portfolio_post, .publication_post {
 		grid-column: 1 / -1;
 	}
@@ -713,29 +708,27 @@ li .aboutme_favicon svg:hover {
   	}
 	 
 	h3 {
-		font-size: 100%;
-	}
-
-	.base_text {
-		line-height: 150%;
-		font-size: 100%;
-	}
-
-	.large {
-		font-size: 150%;
+		font-size: 120%;
 	}
 
 	.narrow {
-		margin: 2%;
+		margin: 1%;
+	}
+
+	.intro {
+		background-attachment: fixed;
+	}
+
+	.list_text {
+    	line-height: 15%;
 	}
 
   	footer .footer_text {
-		width: 100%;
-		font-size: 100%;
+		font-size: 120%;
 	}
 
 	footer .footer_contact {
-		font-size: 100%;
+		font-size: 120%;
 	}
 
 
