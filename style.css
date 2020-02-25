@@ -437,13 +437,13 @@ footer .footer_text {
 }
 
 footer .footer_contact {
+	padding: 7px;
 	font-family: 'Lato';
-	font-size: 150%;
+	font-size: 110%;
 	margin: 5%;
    	border: 1px solid rgba(225, 225, 225, .75);
   	-webkit-box-sizing: border-box;
   	box-sizing: border-box;
-  	padding: 7px;
   	border-radius: 5px;
   	margin-bottom: 0.5rem;
 }
@@ -716,7 +716,7 @@ li .aboutme_favicon svg:hover {
 	}
 
 	.intro {
-		background-attachment: fixed;
+		background-attachment: scroll;
 	}
 
 	.list_text {
