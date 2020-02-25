@@ -77,9 +77,6 @@ h3 {
 	margin: 2% 20% 2% 20%;
 }
 
-#about_me, #publications, #dataviz {
-    margin: 1em 0 2em 0;
-}
 /*--- LINKS ---*/
 
 a, a:link, a:visited, a:active {
@@ -166,7 +163,6 @@ li {
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
-	background-size: cover;
 }
 
 .intro .inner {
@@ -681,6 +677,7 @@ li .aboutme_favicon svg:hover {
 @media screen and (max-width: 480px) {
 	.content {
 		padding-bottom: 50%;
+		min-height: 100%;
 	}
 	.content h1 {
 		font-size: 100%;
@@ -703,7 +700,7 @@ li .aboutme_favicon svg:hover {
 		grid-column: 1 / -1;
 	}
 
-  .publication_name {
+  	.publication_name {
 		font-size: 80%;
 		font-weight: 400;
 		line-height: 1.1em;
@@ -728,5 +725,6 @@ li .aboutme_favicon svg:hover {
 
 	footer .footer_contact {
 		font-size: 200%;
+		font-family: "Lato";
 	}
 }
