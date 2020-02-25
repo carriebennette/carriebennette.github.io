@@ -166,6 +166,7 @@ li {
   	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    overflow: hidden;
 }
 
 .intro .inner {
@@ -714,21 +715,26 @@ li .aboutme_favicon svg:hover {
 		font-size: 100%;
 	}
 
+	.base_text {
+		line-height: 150%;
+		font-size: 100%;
+	}
+
 	.large {
-		font-size: 120%;
+		font-size: 150%;
 	}
 
 	.narrow {
-		margin: 1% 1% 1% 1%;
+		margin: 2%;
 	}
 
   	footer .footer_text {
 		width: 100%;
-		font-size: 85%;
+		font-size: 100%;
 	}
 
 	footer .footer_contact {
-		font-size: 200%;
+		font-size: 100%;
 		-webkit-appearance: none;
 		-moz-appearance: none;
     	-o-appearance: none;
