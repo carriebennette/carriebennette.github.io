@@ -232,11 +232,11 @@ li {
 
 .tools_text{
 	font-size: 110%;
-		background: none;
+	background: none;
 }
 
 .list_text{
-	line-height: 95%;
+	line-height: 110%;
 }
 
 /*--- PORTFOLIO ---*/
@@ -720,7 +720,7 @@ li .aboutme_favicon svg:hover {
 	}
 
 	.list_text {
-    	line-height: 15%;
+    	line-height: 55%;
 	}
 
   	footer .footer_text {
@@ -728,6 +728,8 @@ li .aboutme_favicon svg:hover {
 	}
 
 	footer .footer_contact {
+		-webkit-appearance: none;
+		font-family: 'Lato';
 		font-size: 120%;
 	}
 
