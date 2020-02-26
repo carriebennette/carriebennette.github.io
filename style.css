@@ -402,7 +402,6 @@ hr {
 .btn_normal {
   	font-family: 'Montserrat', sans-serif;
   	font-size: 0.85rem;
-  	color: white;
   	border: 1px solid rgba(61, 57, 72, 0.2);
   	-webkit-box-sizing: border-box;
   	-o-box-sizing: border-box;
@@ -426,6 +425,7 @@ hr {
 .btn_footer {
 	font-family: 'Lato', sans-serif;
 	font-size: 110%;
+	color: white;
    	border: 2px solid rgba(225, 225, 225, .75);
    	border-radius: 5px;
   	-webkit-box-sizing: border-box;
