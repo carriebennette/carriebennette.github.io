@@ -249,8 +249,7 @@ li {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     list-style: none;
-    margin: 1em;
-    grid-gap: 0.5em;
+    grid-gap: 0.25em;
 }
 
 .portfolio_post, .portfolio_text {
@@ -262,7 +261,12 @@ li {
 
 .portfolio_link {
 	width: 100%;
-	text-decoration: none;
+	background-color: none;
+}
+
+.portfolio_link:hover {
+	width: 100%;
+	background-color: rgba(255,255,255,.8);
 }
 
 .portfolio_img {
@@ -287,6 +291,11 @@ li {
 }
 
 .publication_post {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+}
+
+.publication_post:hover {
     -ms-grid-column-span: 2;
         grid-column-end: span 2;
 }
@@ -590,6 +599,10 @@ li .aboutme_favicon svg:hover {
 		grid-column: 1 / -1;
   	}
 
+  	.portfolio_post {
+		grid-column: 1 / -1;
+	}
+
 	.publication_list {
     	display: -ms-grid;
     	display: grid;
@@ -705,10 +718,6 @@ li .aboutme_favicon svg:hover {
 		font-size: 100%;
 		max-width: 300px;
 		margin: 0 auto;
-	}
-
-	.portfolio_post, .publication_post {
-		grid-column: 1 / -1;
 	}
 
   	.publication_name {
