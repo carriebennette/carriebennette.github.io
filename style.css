@@ -258,11 +258,6 @@ li {
         grid-column-end: span 2;
 }
 
-.publication_post:hover {
-    -ms-grid-column-span: 2;
-        grid-column-end: span 2;
-}
-
 .publication_link {
 	width: 100%;
 	text-decoration: none;
@@ -353,8 +348,16 @@ li {
 	padding-left: 35px;
 }
 
-.publication_img_screen {
+.portfolio_img_screen {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
 	background: rgba(255,255,255,0);
+	opacity: 0.025;
+	transition: all 0.5s ease;
 }
 
 /*--- CONTACT ME ---*/
@@ -672,7 +675,7 @@ li .aboutme_favicon svg:hover {
     text-align: left;
   }
 
-  .portfolio_post, .publication_post {
+  .publication_post {
 	grid-column: 1 / -1;
   }
 
