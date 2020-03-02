@@ -496,7 +496,7 @@ footer .footer_contact {
 /*--- SOCIAL MEDIA *---*/
 
 .social_list{
-	display: flex;
+		display: flex;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	justify-content: center;
